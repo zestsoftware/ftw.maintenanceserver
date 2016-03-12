@@ -66,7 +66,7 @@ class HTTPRequestHandler(SimpleHTTPRequestHandler):
             return filepath
 
 
-class HTTPServer(SocketServer.TCPServer):
+class HTTPServer(SocketServer.ThreadingMixIn, SocketServer.TCPServer):
 
     allow_reuse_address = True
 
