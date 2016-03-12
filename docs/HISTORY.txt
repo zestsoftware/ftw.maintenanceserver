@@ -8,6 +8,9 @@ Changelog
 - Make SocketServer threaded by using ThreadingMixIn for better performance.
   [fredvd]
 
+- Allow setting a different listening address as optional parameter. Default is still localhost. pass an empty string to listen to all addresses on a host.
+  [fredvd]
+
 
 1.0.2 (2015-01-21)
 ------------------
